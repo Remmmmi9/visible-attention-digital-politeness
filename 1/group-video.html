@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final Video | Visible Attention</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body data-page="group-video.html">
+  <header class="site-header">
+    <nav class="capsule-nav" aria-label="Main navigation">
+      <a class="mini-brand" href="index.html" aria-label="Visible Attention home">
+        <img src="assets/img/va-logo.png" alt="Visible Attention logo">
+      </a>
+
+      <a class="nav-parent " href="index.html">Home</a>
+
+      <div class="nav-group ">
+        <button class="nav-parent" type="button" aria-expanded="false">Digital Spaces<span>⌄</span></button>
+        <div class="dropdown">
+          <a href="personal-map.html" class="drop-item ">Digital Map</a>
+          <a href="personal-logs.html" class="drop-item ">Everyday Moments</a>
+          <a href="personal-noticed.html" class="drop-item ">Lingering Thoughts</a>
+        </div>
+      </div>
+
+      <div class="nav-group ">
+        <button class="nav-parent" type="button" aria-expanded="false">Reading the Pause<span>⌄</span></button>
+        <div class="dropdown">
+          <a href="concept-analysis.html" class="drop-item ">Close Reading</a>
+          <a href="concept-cards.html" class="drop-item ">Concept Cards</a>
+        </div>
+      </div>
+
+      <div class="nav-group active">
+        <button class="nav-parent" type="button" aria-expanded="false">Visual Podcast<span>⌄</span></button>
+        <div class="dropdown">
+          <a href="group-video.html" class="drop-item active">Watch the Podcast</a>
+          <a href="group-process.html" class="drop-item ">Making the Podcast</a>
+          <a href="group-reflection.html" class="drop-item ">My Role & Reflection</a>
+        </div>
+      </div>
+
+      <div class="nav-group ">
+        <button class="nav-parent" type="button" aria-expanded="false">The Space Between<span>⌄</span></button>
+        <div class="dropdown">
+          <a href="interactive-space.html" class="drop-item ">Interactive Piece</a>
+          <a href="interactive-feedback.html" class="drop-item ">Leave a Thought</a>
+        </div>
+      </div>
+
+      <a class="nav-parent " href="about.html">About</a>
+      <a class="nav-parent " href="references.html">Sources</a>
+    </nav>
+  </header>
+
+  <main class="visual-podcast-page">
+    <section class="visual-podcast-cover">
+      <p class="kicker">Visual Podcast / Watch the Podcast</p>
+      <h1>Ease Talks:<br><em>Seen, But Not Ready</em></h1>
+      <p class="cover-copy">
+        A visual podcast about read visibility, reply pressure and the small social meanings created by messaging interfaces.
+      </p>
+    </section>
+
+    <section class="visual-podcast-player">
+      <div class="youtube-video-wrap video-cover-wrap" id="videoCover">
+        <img src="assets/img/video-cover.png" alt="Ease Talks video cover" class="video-cover-img">
+
+        <button class="video-play-button" type="button" aria-label="Play video">
+          ▶
+        </button>
+      </div>
+    </section>
+
+    <section class="watch-note-strip">
+      <div>
+        <span class="mini-label">Watch for</span>
+        <p>
+          How small interface signs, such as blue ticks, timestamps and notification previews, change the social meaning of waiting and replying.
+        </p>
+      </div>
+
+      <div>
+        <span class="mini-label">Project focus</span>
+        <p>
+          Not a battle of apps, but a story about what happens when attention becomes visible before a reply is ready.
+        </p>
+      </div>
+
+      <div>
+        <span class="mini-label">Format</span>
+        <p>
+          A visual podcast combining group discussion, recreated chat examples, subtitles, screen recordings and concept cards.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="handwritten">Seen does not always mean ready.</span>
+    <span>Visible Attention · Digital Archive</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const videoCover = document.getElementById("videoCover");
+
+    if (videoCover) {
+      videoCover.addEventListener("click", () => {
+        videoCover.innerHTML = `
+          <iframe
+            src="https://www.youtube.com/embed/epCGT0QyqNs?autoplay=1"
+            title="Ease Talks: Seen, But Not Ready"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        `;
+      });
+    }
+  </script>
+</body>
+</html>

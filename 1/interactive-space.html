@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Space Between | Visible Attention</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="interactive-space.html">
+  <header class="site-header">
+    <nav class="capsule-nav" aria-label="Main navigation">
+      <a class="mini-brand" href="index.html" aria-label="Visible Attention home"><img src="assets/img/va-logo.png" alt="Visible Attention logo"></a>
+      <a class="nav-parent " href="index.html">Home</a>
+<div class="nav-group ">
+                <button class="nav-parent" type="button" aria-expanded="false">Digital Spaces<span>⌄</span></button>
+                <div class="dropdown"><a href="personal-map.html" class="drop-item ">Digital Map</a><a href="personal-logs.html" class="drop-item ">Everyday Moments</a><a href="personal-noticed.html" class="drop-item ">Lingering Thoughts</a></div>
+              </div>
+<div class="nav-group ">
+                <button class="nav-parent" type="button" aria-expanded="false">Reading the Pause<span>⌄</span></button>
+                <div class="dropdown"><a href="concept-analysis.html" class="drop-item ">Close Reading</a><a href="concept-cards.html" class="drop-item ">Concept Cards</a></div>
+              </div>
+<div class="nav-group ">
+                <button class="nav-parent" type="button" aria-expanded="false">Visual Podcast<span>⌄</span></button>
+                <div class="dropdown"><a href="group-video.html" class="drop-item ">Watch the Podcast</a><a href="group-process.html" class="drop-item ">Making the Podcast</a><a href="group-reflection.html" class="drop-item ">My Role & Reflection</a></div>
+              </div>
+<div class="nav-group active">
+                <button class="nav-parent" type="button" aria-expanded="false">The Space Between<span>⌄</span></button>
+                <div class="dropdown"><a href="interactive-space.html" class="drop-item active">Interactive Piece</a><a href="interactive-feedback.html" class="drop-item ">Leave a Thought</a></div>
+              </div>
+<a class="nav-parent " href="about.html">About</a>
+<a class="nav-parent " href="references.html">Sources</a>
+    </nav>
+  </header>
+
+
+
+
+<main>
+  <section class="subpage-cover">
+    <p class="kicker">The Space Between / Interactive Piece</p>
+    <h1>A pause is not empty.</h1>
+    <p class="cover-copy">Move slowly. Build what happens between seeing and replying.</p>
+  </section>
+
+  <section class="space-stage refined-pause-stage" aria-label="Build your pause interactive piece">
+    <canvas id="thoughtCanvas"></canvas>
+
+    <div class="central-message">
+      <span>Group chat</span>
+      <p>Can you send your part tonight?</p>
+      <small>Seen 14:32</small>
+    </div>
+
+    <div class="reply-field refined-reply-field" id="dropArea">
+      <p>Your pause…</p>
+      <small>drag or click a word</small>
+      <div class="chosen-words" id="chosenWords"></div>
+    </div>
+
+    <div class="quiet-word-bank" aria-label="Pause words">
+      <button class="pause-word drift w1" draggable="true" data-word="thinking">thinking</button>
+      <button class="pause-word drift w2" draggable="true" data-word="checking">checking</button>
+      <button class="pause-word drift w3" draggable="true" data-word="translating">translating</button>
+      <button class="pause-word drift w4" draggable="true" data-word="softening">softening</button>
+      <button class="pause-word drift w5" draggable="true" data-word="still caring">care</button>
+      <button class="pause-word drift w6" draggable="true" data-word="finding words">finding words</button>
+      <button class="pause-word drift w7" draggable="true" data-word="too direct?">too direct?</button>
+      <button class="pause-word drift w8" draggable="true" data-word="maybe later">maybe later</button>
+    </div>
+
+    <div class="pause-result" id="generatedReflection">
+      <span>before the reply</span>
+      <p>Choose a few words to make the invisible part of the pause visible.</p>
+    </div>
+
+    <p class="handwritten stage-note">I’ve seen it, but I’m still thinking.</p>
+  </section>
+
+  <section class="poetic-instruction refined-instruction">
+    <p class="handwritten">Build your pause.</p>
+    <p>This is not a quiz and there is no fixed answer. The words only help make the space before reply a little more visible.</p>
+  </section>
+
+  <script src="assets/js/space-between.js"></script>
+  <script src="assets/js/build-pause.js"></script>
+</main>
+
+
+
+
+  <footer class="site-footer">
+    <span class="handwritten">Seen does not always mean ready.</span>
+    <span>Visible Attention · Digital Archive</span>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/build-pause.js"></script>
+</body>
+</html>
